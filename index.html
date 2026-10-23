@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MATLAB Learn</title>
+<meta name="description" content="Learn MATLAB from zero: a daily lesson, quick questions and coding problems checked in your browser, following the order of MATLAB Onramp.">
+<meta name="theme-color" content="#1b2430">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b2430'/%3E%3Cpath d='M6 23l7-12 5 7 3-4 5 9' stroke='%23f2994a' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <span class="tag">MATLAB from zero · Onramp companion</span>
+      <h1>MATLAB<span>/</span>Learn</h1>
+    </div>
+    <div class="strip tabular">
+      <span>Streak <b id="sStreak">0</b>d</span>
+      <span>Solved <b id="sSolved">0</b>/<span id="sTotal">0</span></span>
+    </div>
+  </header>
+  <nav aria-label="Sections">
+    <span id="navind" aria-hidden="true"></span>
+    <button data-v="daily" aria-selected="true">Daily</button>
+    <button data-v="learn" aria-selected="false">Learn</button>
+    <button data-v="practice" aria-selected="false">Practice</button>
+    <button data-v="play" aria-selected="false">Playground</button>
+    <button data-v="profile" aria-selected="false">Profile</button>
+  </nav>
+  <main>
+    <section class="panel" id="v-daily"><div class="card"><p class="muted">Loading…</p></div></section>
+    <section class="panel" id="v-learn" hidden></section>
+    <section class="panel" id="v-practice" hidden></section>
+    <section class="panel" id="v-play" hidden></section>
+    <section class="panel" id="v-profile" hidden></section>
+    <section class="panel" id="v-problem" hidden></section>
+  </main>
+  <p class="foot">Built by Chakshu Chopra · Follows the order of <a href="https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted" target="_blank" rel="noopener">MATLAB Onramp</a> · Code runs in your browser · Progress stays in your browser · Not affiliated with MathWorks</p>
+</div>
+<noscript><p style="text-align:center">MATLAB Learn needs JavaScript to run.</p></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/octave/octave.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+<script src="assets/mlab.js"></script>
+<script src="assets/curriculum.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
